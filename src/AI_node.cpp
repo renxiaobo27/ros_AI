@@ -1,0 +1,19 @@
+#include"AI.h"
+
+
+
+int main(int argc, char **argv)
+{
+  ros::init(argc,argv,"AI_node");
+  ros::NodeHandle n;
+  myImproc::YOLO yolo_received_msg;
+  AI ai(yolo_received_msg);
+
+  ros::Subscriber sub = n.subscribe("items",10,&AI::yoloCallback,&ai);
+  ros::spin();
+
+
+  
+  return 0;
+ 
+}
