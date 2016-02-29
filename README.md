@@ -1,7 +1,7 @@
 # ros_AI
 This project is trying to collect data of different sensors and use deep learning to control ouput based on Jetson TX1 and ROS.
 
-#Sensor
+#Sensors
 1 Camera
 The function of camera is straightfoward, object detection including car, pedestrain and so on.
 This work is based on YOLO and its tiny model.
